@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+/* Button */
+.Button {
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+}
+
+.Button:hover{
+  background-color:transparent;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+/* Paragraph */
+.Paragraph {
+  display: block;
+  color: white;
+}
+
+.root{
+	height: 100vh;
+}
+
+/* Heading */
+.sedan-heading {
+  color: white;
+}
+
+/* Image */
+.image-sedan{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+ /* Card */
+
+.sedan-card{
+  position: relative;
+  background-color: hsl(31, 77%, 52%);
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.sedan-card.green {
+  background-color: green;
+}
+
+.sedan-card.blue {
+  background-color: darkblue;
+}
+
+.Paragraph,
+.image-sedan,
+.sedan-heading {
+  margin-bottom: 20px;
+}
+
+/* Card Container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 960px) {
+  .root{
+	  display: flex;
+	  align-items: center;
+  }
+  
+  .container {
+    flex-direction: row;
+  }
+}
