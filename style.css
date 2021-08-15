@@ -3,7 +3,9 @@
   padding: 0;
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 /* Button */
@@ -14,8 +16,8 @@
   border: none;
 }
 
-.Button:hover{
-  background-color:transparent;
+.Button:hover {
+  background-color: transparent;
   border: 3px solid white;
   color: white;
   cursor: pointer;
@@ -27,8 +29,8 @@
   color: white;
 }
 
-.root{
-	height: 100vh;
+.root {
+  height: 100vh;
 }
 
 /* Heading */
@@ -37,14 +39,15 @@
 }
 
 /* Image */
-.image-sedan{
+.image-sedan,
+.image-suv,
+.image-lux {
   width: 50px;
   height: 50px;
-  background-color: white;
 }
- /* Card */
+/* Card */
 
-.sedan-card{
+.sedan-card {
   position: relative;
   background-color: hsl(31, 77%, 52%);
   box-sizing: border-box;
@@ -52,15 +55,14 @@
 }
 
 .sedan-card.green {
-  background-color: green;
+  background-color: hsl(120, 69%, 28%);
 }
 
 .sedan-card.blue {
-  background-color: darkblue;
+  background-color: hsl(241, 69%, 28%);
 }
 
 .Paragraph,
-.image-sedan,
 .sedan-heading {
   margin-bottom: 20px;
 }
@@ -72,11 +74,11 @@
 }
 
 @media screen and (min-width: 960px) {
-  .root{
-	  display: flex;
-	  align-items: center;
+  .root {
+    display: flex;
+    align-items: center;
   }
-  
+
   .container {
     flex-direction: row;
   }
